@@ -6,6 +6,8 @@ function MyWidget(props: { text: string }) {
   return <div>{props.text}</div>;
 }
 
+function Roll(props: { dices: string }) {}
+
 function App() {
   return (
     <div className="App">
@@ -24,6 +26,12 @@ function App() {
           Learn React
         </a>
       </header>
+      <div>
+        <form action="">
+          <input type="text" name="dice" id="dice" />
+          <input type="button" value="Würfeln" />
+        </form>
+      </div>
     </div>
   );
 }
